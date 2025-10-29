@@ -33,6 +33,19 @@ export default function Content(){
     });
   }
 
+  const changemImgtoRight=()=>{
+    setmimgSlider((prev)=>{
+      prev++;
+      return prev;
+    });
+  }
+  const changemImgtoLeft=()=>{
+    setmimgSlider((prev)=>{
+      prev--;
+      return prev;
+    });
+  }
+
   const heroStyle0={
     backgroundImage:`url(${Img1})`,
     backgroundSize: 'cover',
@@ -112,8 +125,11 @@ export default function Content(){
         </>
       )}
     </div>
-    <br/><br/><br/>
+    <br/><br/>
     <div className="midImages">
+      <div className="btnsliderL">
+        {midImgSlider>0 && <button className="midsliderL" onClick={changemImgtoLeft}>&lt;=</button>}
+      </div>
       <div className="midimg1" style={midimgstyle1}>
         <div className="midimg1head">
           <h1>Model Y</h1>
@@ -122,6 +138,9 @@ export default function Content(){
           <button className="order" >Order Now</button>
           <button className="lmore">Learn More</button>
         </div>
+      </div>
+      <div className="btnsliderR">
+        {midImgSlider<5 && <button className="midsliderR" onClick={changemImgtoRight}>=&gt;</button>}
       </div>
     </div>
 
