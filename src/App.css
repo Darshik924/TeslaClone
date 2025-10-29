@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+.navbar{
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  margin-left: 29px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.opt{
+  margin-top: 10px;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap:25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.veh:hover{
+  background-color: rgb(223, 225, 227);
+  cursor:pointer;
+  transition-duration: 0.5s;
+}
+.veh{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem; 
+  border-radius: 9999px; 
+}
+.reg{
+  margin-right: 30px;
+  gap:20px;
+  display:flex;
+  margin-top: 15px;
+}
+.reg:hover{
+  cursor:pointer;
+  transition-duration: 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+
+.imgslider{
+  height:600px;
+  width: 100%;
+}
+@keyframes HeroAnimActive{
+  from{
+    opacity: 0;
+    transform:translateY(0);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+}
+ .imgslider{
+  display:flex;
+  flex-direction: column;
+  gap:30px;
+  justify-content: center;
+  animation-name:HeroAnimActive;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+ }
+ .buttons{
+  display:flex;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+ }
+ .sliderR{
+  font-size: 22px;
+ }
+ .sliderL{
+  font-size: 22px;
+ }
+ .sliderR:active{
+  border:2px solid black;
+ }
+.sliderR:hover{
+  background-color: rgb(218, 220, 222);
+}
+ .sliderL:active{
+  border:3px solid black;
+ }
+.sliderL:hover{
+  background-color: rgb(218, 220, 222);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banHeading{
+  color:white;
+  font-weight: 600;
+  text-align: center;
+  font-size: 33px;
+  position: relative;
+  bottom:70px;
+}
+.btnImg1{
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  position: relative;
+  bottom:120px;
+}
+.order{
+  background-color: rgb(63, 114, 243);
+  color:white;
+  height:40px;
+  width:200px;
+  border-radius: 8px;
+  border-color:rgb(63, 114, 243) ;
+}
+.lmore{
+  color:grey;
+  background-color: aliceblue;
+  height:40px;
+  width:200px;
+  border-radius: 8px;
+  border-color:aliceblue;
+}
+
+.midImages{
+  display:flex;
+  height:550px;
+  margin-left: 80px;
+  
+}
+.midimg1{
+  width:900px;
+  height:550px;
+  border-radius: 19px;
+}
+.btnImg2{
+  display:flex;
+  gap:20px;
+  margin-left: 40px;
+  position: relative;
+  top:250px;
+}
+.midimg1head{
+  color:white;
+  font-weight: 500;
+  font-size: 30px;
+  position: relative;
+  top:240px;
+  margin-left: 40px;
 }
