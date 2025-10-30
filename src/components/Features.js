@@ -13,7 +13,7 @@ export default function Features() {
                     <button className="lmore">Learn More</button>
                 </div>
                 <div className="offimg">
-                    <img className="offimg" src={offimg} height="250px" width="200px"/>
+                    <img alt="offers" className="offimg" src={offimg} height="250px" width="200px"/>
                 </div>
             </div>
             <div className="offer">
@@ -23,10 +23,10 @@ export default function Features() {
                     <button className="lmore">Learn More</button>
                 </div>
                 <div className="offimg">
-                    <img className="offimg" height="250px" width="200px"/>
+                    <img alt="anual meet" src={meetimg} className="offimg" height="250px" width="200px"/>
                 </div>
             </div>
-        </div>
+        </div><br/><br/><br/>
     </>
   )
 }

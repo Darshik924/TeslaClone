@@ -4,10 +4,10 @@ import Img1 from '../Assets/banimg1.avif';
 import Img3 from '../Assets/banimg3.avif';
 
 import midImg1 from '../Assets/midsuzuki.avif';
-import midImg2 from '../Assets/midsedan.avif';
-import midImg3 from '../Assets/midutiltruck.avif';
-import midImg4 from '../Assets/midluxsuv.avif';
-import midImg5 from '../Assets/midsedan.avif';
+// import midImg2 from '../Assets/midsedan.avif';
+// import midImg3 from '../Assets/midutiltruck.avif';
+// import midImg4 from '../Assets/midluxsuv.avif';
+// import midImg5 from '../Assets/midsedan.avif';
 
 export default function Content(){
 

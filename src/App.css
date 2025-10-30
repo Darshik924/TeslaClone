@@ -156,26 +156,33 @@
   gap:15px;
   margin-left: 32px;
   margin-right: 32px;
+  justify-content: center;
+  gap:10px;
 }
 .offer{
   display:flex;
-  background-color: rgb(231, 234, 237);
+  background-color: rgb(245, 246, 247);
   border-radius: 20px;
   width:50%;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 18px;
 }
 .offimg{
   border-radius: 20px; 
+  width:270px;
 }
 .curroff{
-  padding:24px;
+  padding: 24px;
 }
 .curroffHead{
   color:black;
   font-size: 30px;
-  font-weight: 450;
+  font-weight: 600;
 }
 .curroffCon{
   color:grey;
   font-size: 24px;
 }
+
+
+
