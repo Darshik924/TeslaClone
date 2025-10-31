@@ -6,6 +6,7 @@
     background-color: white;
     display:flex;
     justify-content: space-between;
+    height:60px;
 }
 .logo{
   margin-left: 29px;
@@ -17,7 +18,9 @@
   gap:25px;
   font-weight: 500;
   margin-bottom: 10px;
+  
 }
+
 .veh:hover{
   background-color: rgb(223, 225, 227);
   cursor:pointer;
@@ -40,6 +43,8 @@
   cursor:pointer;
   transition-duration: 0.5s;
 }
+
+
 
 
 .imgslider{
@@ -184,5 +189,48 @@
   font-size: 24px;
 }
 
+@keyframes navbarExpand{
+  from{
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.models{
+  display:flex;
+  animation-name: navbarExapnd;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0.2s;
+  justify-content: space-evenly;
+  background-color: white;
+  height:500px;
+  position: absolute;
+  width:100%;
+  z-index: 2;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.cars{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
+.hopt{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-right: 60px;
+}
+.c{
+  font-size: 20px;
+  color:grey;
+}
+.c:hover{
+  text-decoration: underline;
+}
 
 
