@@ -11,6 +11,9 @@
 .logo{
   margin-left: 29px;
 }
+.logo:hover{
+  cursor: pointer;
+}
 .opt{
   margin-top: 10px;
   display:flex;
@@ -20,6 +23,7 @@
   margin-bottom: 10px;
   
 }
+
 
 .veh:hover{
   background-color: rgb(223, 225, 227);
@@ -33,6 +37,8 @@
   padding: 0.5rem 0.75rem; 
   border-radius: 9999px; 
 }
+
+
 .reg{
   margin-right: 30px;
   gap:20px;
@@ -189,41 +195,86 @@
   font-size: 24px;
 }
 
-@keyframes navbarExpand{
-  from{
-    transform: translateY(-15px);
+@keyframes navbarExpand {
+  from {
+    transform: translateY(-65px);
     opacity: 0;
   }
-  to{
+  to {
     transform: translateY(0px);
     opacity: 1;
   }
 }
+
+@keyframes carsanim {
+  from{
+    transform: translateX(-2px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
 .models{
+  animation-name: navbarExpand; 
+  animation-duration: 0.7s; 
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
   display:flex;
-  animation-name: navbarExapnd;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in;
-  animation-delay: 0.2s;
   justify-content: space-evenly;
   background-color: white;
   height:500px;
   position: absolute;
+  top:20px;
   width:100%;
   z-index: 2;
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.names1{
+  display:flex;
+  margin-left: 60px;
+  gap:120px;
+  position: relative;
+  bottom:160px;
+}
+.names{
+  display:flex;
+  margin-left: 60px;
+  gap:160px;
+  position: relative;
+  bottom:160px;
+}
+.names2{
+  display:flex;
+  margin-left: 60px;
+  gap:100px;
+  position: relative;
+  bottom:160px;
+}
 .cars{
   display: flex;
   flex-wrap: wrap;
   margin-left: 60px;
+  animation-name: carsanim;
+  animation-timing-function: ease;
+  animation-duration: 0.9s;
+  animation-delay: 0.2s;
+  gap:30px;
+}
+.cars:hover{
+  cursor:pointer;
 }
 .hopt{
   display: flex;
   flex-direction: column;
-  gap:10px;
-  margin-right: 60px;
+  gap:11px;
+  margin-right: 300px;
+}
+.hopt:hover{
+  cursor: pointer;
 }
 .c{
   font-size: 20px;
