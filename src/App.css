@@ -133,7 +133,7 @@
   border-color:aliceblue;
 }
 
-.midImages{
+/* .midImages{
   display:flex;
   height:550px;
   margin-left: 80px;
@@ -159,7 +159,7 @@
   position: relative;
   top:240px;
   margin-left: 40px;
-}
+} */
 
 
 .offandmeet{
@@ -210,10 +210,12 @@
   from{
     transform: translateX(-2px);
     opacity: 0;
+    visibility:hidden;
   }
   to{
     transform: translateX(0px);
     opacity: 1;
+    visibility:visible;
   }
 }
 
@@ -261,8 +263,9 @@
   animation-name: carsanim;
   animation-timing-function: ease;
   animation-duration: 0.9s;
-  animation-delay: 0.2s;
+  animation-delay: 0.5s;
   gap:30px;
+  visibility: hidden;
 }
 .cars:hover{
   cursor:pointer;
@@ -285,3 +288,40 @@
 }
 
 
+.cc{
+    position: relative;
+    width: 100vw;
+    height:700px;
+    overflow: hidden; 
+}
+.cw{
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+    width: fit-content; 
+}
+.clisde{
+    width: 100vw; 
+    flex-shrink: 0; 
+}
+.cimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.cb{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+.cbl{
+    left: 10px;
+}
+.cbr{
+    right: 10px;
+}

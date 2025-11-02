@@ -3,17 +3,9 @@ import Img2 from '../Assets/banimg2.avif';
 import Img1 from '../Assets/banimg1.avif';
 import Img3 from '../Assets/banimg3.avif';
 
-import midImg1 from '../Assets/midsuzuki.avif';
-// import midImg2 from '../Assets/midsedan.avif';
-// import midImg3 from '../Assets/midutiltruck.avif';
-// import midImg4 from '../Assets/midluxsuv.avif';
-// import midImg5 from '../Assets/midsedan.avif';
-
 export default function Content(){
-
-  var [ImgSlider,setimgSlider]=useState(1);
-  var [midImgSlider,setmimgSlider]=useState(1);
-
+  const [ImgSlider,setimgSlider]=useState(1);
+  
   const changeImgtoRight=()=>{
     setimgSlider((prev)=>{
       prev++;
@@ -33,18 +25,7 @@ export default function Content(){
     });
   }
 
-  const changemImgtoRight=()=>{
-    setmimgSlider((prev)=>{
-      prev++;
-      return prev;
-    });
-  }
-  const changemImgtoLeft=()=>{
-    setmimgSlider((prev)=>{
-      prev--;
-      return prev;
-    });
-  }
+  
 
   const heroStyle0={
     backgroundImage:`url(${Img1})`,
@@ -65,15 +46,7 @@ export default function Content(){
     backgroundPosition : 'center',
     backgroundRepeat: 'no-repeat',
   };
-
-  const midimgstyle1={
-    backgroundImage:`url(${midImg1})`,
-    backgroundSize:'cover',
-    backgroundPosition : 'center',
-    backgroundRepeat: 'no-repeat',
-  };
-
-
+  
   return (
     <>
     <div className="Herobanner">
@@ -126,7 +99,8 @@ export default function Content(){
       )}
     </div>
     <br/><br/>
-    <div className="midImages">
+    
+    {/* <div className="midImages">
       <div className="btnsliderL">
         {midImgSlider>0 && <button className="midsliderL" onClick={changemImgtoLeft}>&lt;=</button>}
       </div>
@@ -142,7 +116,7 @@ export default function Content(){
       <div className="btnsliderR">
         {midImgSlider<5 && <button className="midsliderR" onClick={changemImgtoRight}>=&gt;</button>}
       </div>
-    </div>
+    </div> */}
 
     </>
   )
